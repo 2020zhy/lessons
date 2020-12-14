@@ -1,0 +1,30 @@
+<!doctype html>
+    <html>
+    <head>
+      <title>grid</title>
+      <meta charset="utf-8">
+      <style>
+      	.yamamoto {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100px 100px;
+            grid-gap: 10px;
+        }
+        .yamamoto > div {
+        	background-color:yellow;
+        }
+      </style>
+      </head>
+      <body>
+      	<h1>grid</h1>
+      	<hr>
+      	<div class="yamamoto">
+      		<div>1:one</div>
+      		<div>2:two</div>
+      		<div>3:three</div>
+      		<div>4:four</div>
+      		<div>5:five</div>
+      		<div>6:six</div>
+      	</div>
+      </body>
+      </html>
