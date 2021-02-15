@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-  	<title>test5</title>
+<html>
+<head>
+	<title>test8</title>
+	<meta charset="utf-8">
+	<style>
+		img{
+			width:300px;
+		}
+	</style>
 </head>
 <body>
-	<img src="gazo/cat.jpg" width=200>
+	<h1>test8</h1>
+	<hr>
+	<img src="exam/baby.jpg">
+	<h2>one</h2>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script>
 		$(function(){
 			const gazofiles = [
-			'gazo/duck.png',
-			'gazo/sheep.png',
+			"exam/baby.jpg",
+			"exam/CUP.jpg",
+			"exam/sun.jpg",
+			"exam/luo.jpg",
+			]
+			const titles = [
+			"one",
+			"two",
+			"three",
+			"four"
 			]
 			let num = 0
 		$("img").on("click",function(){
@@ -19,6 +36,7 @@
 				num = 0
 			}
 			$("img").attr("src",gazofiles[ num ]);
+			$("h2").text(titles[num]);
 		   })
 	    })
 	</script>
