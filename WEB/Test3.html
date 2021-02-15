@@ -1,24 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>クイズ</title>
-	<meta charset="utf-8">
+  <html>
+  <head>
+  	<title>test3</title>
 </head>
 <body>
-	<h1>クイズ with jQuery</h1>
-	問題文をクリックすると、正解が表示されます.
-	<hr>
-	<p>
-		朝ご飯は何をたべますか?
-	</p>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
-	</script>
-	<script>
-		$(function(){
-			$("p").on("click",function(){
-				$("p").text("パン");
-			});
-		})
-	</script>
+<img src="gazo/cat.jpg" width=300>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+ 	$(function(){
+ 		$('img').on('click',function(){
+ 			$(this).width(600);
+ 		});
+ 	})
+</script>
 </body>
 </html>
