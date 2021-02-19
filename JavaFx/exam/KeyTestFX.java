@@ -25,7 +25,7 @@ public class BallTestFX extends Application {
 		scene.setOnKeyPressed(
 			new EventHandler<KeyEvent>() {
 				public void handle(KeyEvent e) {
-				System.out.println(e.getCode());
+				key.keyPressed(e);
 			}
 		}
 		);
@@ -56,7 +56,7 @@ class Ball {
 	private int y;
 	private int x_speed;
 	private int y_speed;
-	public Ball() {
+    public Ball() {
 		this.x = 20;
 		this.y = 20;
 		this.x_speed = 5;
@@ -82,7 +82,6 @@ class Key {
 			break;
 			default:
 			break;
-			System.out.println(e.getCode() + "pressed.");
 		}
 	}
 }
